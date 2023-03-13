@@ -34,17 +34,17 @@ export class AppComponent {
   isShowing = false;
   showSubSubMenu: boolean = false;
 
-  mouseenter() {
-    if (!this.isExpanded) {
-      this.isShowing = true;
-    }
-  }
+  // mouseenter() {
+  //   if (!this.isExpanded) {
+  //     this.isShowing = true;
+  //   }
+  // }
 
-  mouseleave() {
-    if (!this.isExpanded) {
-      this.isShowing = false;
-    }
-  }
+  // mouseleave() {
+  //   if (!this.isExpanded) {
+  //     this.isShowing = false;
+  //   }
+  // }
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 }

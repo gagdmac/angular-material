@@ -1,0 +1,12 @@
+// //////////////////////////////////
+// ////////////WRAPPER//////////////
+// ////////////////////////////////
+
+mat-sidenav-container{
+  height:calc(100% - 4rem);
+  border: 1px solid red;
+}
+
+mat-sidenav-content{
+  padding: 20px;
+}

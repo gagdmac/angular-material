@@ -3,7 +3,8 @@
 /*========= SETTINGS =============*/
 @import "styles/settings/settings";
 @import "styles/settings/typography";
-@import "styles/settings/theme";
+@import "styles/settings/lgf-theme";
+@import "styles/settings/theme-general";
 @import "styles/settings/theme.dark";
 @import "styles/settings/theme.light";
 @import "styles/settings/tokens";
@@ -15,7 +16,6 @@
 
 /*========= GENERIC =============*/
 @import "styles/generic/generic";
-@import "styles/generic/lgf-custom";
 
 
 /*========= ELEMENTS =============*/

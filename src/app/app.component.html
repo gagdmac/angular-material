@@ -1,42 +1,42 @@
 <mat-toolbar color="primary" class="toolbar">
-  <button class="" mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
+  <button mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
   <span class="logo"></span>
 </mat-toolbar>
 
 <mat-sidenav-container class="main-container" autosize>
   <mat-sidenav #sidenav class="main-sidenav" mode="side" opened="true">
     <mat-nav-list>
-        <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-list-item>
           <mat-icon mat-list-icon>dashboard</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing"> Main Dashboard</span>
         </mat-list-item>
 
-        <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-list-item>
           <mat-icon mat-list-icon>join_inner</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing"> Matching Goals</span>
         </mat-list-item>
 
-        <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-list-item>
           <mat-icon mat-list-icon>backup</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing">  Import Curricula</span>
         </mat-list-item>
 
-        <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-list-item>
           <mat-icon mat-list-icon>compare</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing"> Compare Curricula</span>
         </mat-list-item>
 
-      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+      <mat-list-item (click)="showSubmenu = !showSubmenu">
         <mat-icon mat-list-icon>create</mat-icon>
         <span class="full-width" *ngIf="isExpanded || isShowing">Create Goals & Methods</span>
-        <mat-icon class="menu-button" [ngClass]="{ rotated: showSubmenu }" *ngIf="isExpanded || isShowing"
-          >expand_more</mat-icon
-        >
+        <mat-icon class="menu-button" [ngClass]="{ rotated: showSubmenu }" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
       </mat-list-item>
       <div class="submenu" [ngClass]="{ expanded: showSubmenu }" *ngIf="isShowing || isExpanded">
-        <a mat-list-item href="...">Subme nu Item 1</a>
-        <a mat-list-item href="...">Submenu Item 2</a>
+        <a mat-list-item>Create Methods</a>
+        <a mat-list-item>Create Goals</a>
+        <a mat-list-item>Add Goals to Methods<mat-icon mat-list-icon>swap_horiz</mat-icon></a>
       </div>
+
     </mat-nav-list>
   </mat-sidenav>
 

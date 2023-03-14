@@ -46,11 +46,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip'
+import { FlatTreeControl } from '@angular/cdk/tree';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -94,7 +96,8 @@ import { MatTooltipModule } from '@angular/material/tooltip'
     CdkStepperModule,
     ScrollingModule,
     PortalModule,
-    DragDropModule
+    DragDropModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

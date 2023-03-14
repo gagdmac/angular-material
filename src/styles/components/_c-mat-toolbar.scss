@@ -2,6 +2,7 @@
   background: var(--md-sys-color-primary);
   color: var(--gray-900);
   box-shadow: var(--md-sys-color-shadow);
+  border-bottom: 1px solid #cccccc;
 }
 
 
@@ -12,4 +13,13 @@
     background-repeat: no-repeat;
     margin-top: 13px;
     margin-left: 31px;
+}
+
+.mdc-list {
+  padding: 0 !important;
+}
+
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  padding: 0 5px !important;
 }
